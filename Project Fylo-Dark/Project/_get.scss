@@ -1,0 +1,147 @@
+
+// For desktop up
+
+@include for_desktop{
+
+  .get-early-section{
+    padding: 1rem 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateY(130px);
+    z-index: 2;
+  }
+
+  .get-early_container-inf{
+    padding: 3rem;
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $testimonials-bk;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    gap: 1.5rem;
+    
+    .get-section_tittle{
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: .5px;
+    }
+    .get-section_parrafo{
+      font-size: 1.1rem;
+    }
+  }
+  .get-section_form{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .get-section_input{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 1.2rem 1.4rem;
+    flex-basis:60%;
+    transition: .2s ease-in;
+    &:focus{
+      transform: scale(1.050);
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// For mobile 
+
+@include for_mobile{
+
+  .get-early-section{
+
+    padding: 2rem 1.5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateY(100px);
+    z-index: 2;
+  }
+
+  .get-early_container-inf{
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: $testimonials-bk;
+    box-shadow: 0 0 5px rgba(8, 14, 41, 0.205);
+    border-radius: 5px;
+    gap: 1rem;
+    .get-section_tittle{
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: .5px;
+    }
+    .get-section_parrafo{
+      font-size: .9rem;
+    }
+  }
+  .get-section_form{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+  }
+  .get-early{
+    font-size: .7rem;
+    
+  }
+  .get-section_input{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 1.2rem 1.4rem;
+    width: 100%;
+    transition: .2s ease-in;
+    &:focus{
+      transform: scale(1.050);
+    }
+    
+  }
+}
+
+
+
+
+

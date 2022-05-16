@@ -1,0 +1,100 @@
+// For Destop up
+@include for_desktop{
+
+  .stay-reservation{
+    @include margin_sections;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .stay-information{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 40%;
+  }
+  .stay-information_title{
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .stay-link-referel{
+    padding-bottom: .3rem;
+    padding-right: 2rem;
+    border-radius: 2px;
+    border-bottom: 2px solid $Cyan;
+    color: $Cyan;
+    position: relative;
+    transition: .2s ease-in;
+    &:before{
+      content: url(./images/icon-arrow.svg);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      
+    }
+    &:hover{
+      color: white;
+    }
+  
+  }
+  
+}
+
+
+
+//  For mobile
+
+
+
+@include for_mobile{
+
+  .stay-reservation{
+    @include margin_sections_mobile;
+    padding: .5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .stay-information{
+    display: flex;
+    flex-direction: column;
+    
+    
+    gap: 1.3rem;
+    width: 100%;
+  }
+  .stay-information_title{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .stay-link-referel{
+    padding-bottom: .4rem;
+    padding-right: 2rem;
+    border-radius: 2px;
+    color: $Cyan;
+    border-bottom: 2px solid $Cyan;
+    position: relative;
+    &:before{
+      content: url(./images/icon-arrow.svg);
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      
+      
+    }
+  }
+  .stay-image{
+    width: 100%;
+  }
+  
+  
+}

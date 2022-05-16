@@ -1,0 +1,161 @@
+
+@include for_desktop{
+
+  .footer-main{
+    
+    padding: 10rem 8rem;
+    width: 100%;
+    height: auto;
+    background-color: $footer-bk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    gap: 2rem;
+    
+
+  }
+  .footer-main_information{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 6rem;
+  }
+  .footer-main_article{
+    width: 30%;
+    height: auto;
+    padding: .2rem;
+    
+  }
+  .footer-main_parrafo{
+    font-size: 1rem;
+    color: $White;
+    letter-spacing: .5px;
+  }
+  .footer-main_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+    .footer-main-contact_contact{
+      font-weight: 300;
+
+    }
+    .number{
+      &:before{
+        content:url(./images/icon-phone.svg);
+        position: absolute;
+        left: -30px;
+      }
+    }
+    .email{
+      &:before{
+        content: url(./images/icon-email.svg);
+        position: absolute;
+        left: -30px;
+      }
+    }
+  
+  .footer-main_about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-main_terms{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+}
+
+
+
+
+
+//  For mobile 
+
+
+
+@include for_mobile{
+
+  .footer-main{
+    padding: 10rem 4.5rem;
+    width: 100%;
+    height: auto;
+    background-color: $footer-bk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    gap: 2rem;
+    
+
+  }
+  .footer-main_information{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 3rem;
+  }
+  .footer-main_article{
+    width: 100%;
+    height: auto;
+    padding: .2rem;
+    position: relative;
+    &::before{
+      content: url(./images/icon-location.svg);
+      position:absolute ;
+      left: -30px;
+    }
+    
+  }
+  .footer-main_parrafo{
+    font-size: 1rem;
+    color: $White;
+    letter-spacing: .5px;
+  }
+  .footer-main_contact{
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+    .footer-main-contact_contact{
+      font-weight: 300;
+
+    }
+    .number{
+      &:before{
+        content:url(./images/icon-phone.svg);
+        position: absolute;
+        left: -30px;
+      }
+    }
+    .email{
+      &:before{
+        content: url(./images/icon-email.svg);
+        position: absolute;
+        left: -30px;
+      }
+    }
+  
+  .footer-main_about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-main_terms{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+}

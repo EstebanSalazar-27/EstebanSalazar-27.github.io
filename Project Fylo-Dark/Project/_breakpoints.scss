@@ -1,0 +1,12 @@
+
+@mixin  for_desktop {
+  @media (min-width:767px) and (max-width:2600px) {
+    @content;
+  }
+}
+
+@mixin  for_mobile {
+  @media (min-width:100px) and (max-width: 768px) {
+    @content;
+  }
+}

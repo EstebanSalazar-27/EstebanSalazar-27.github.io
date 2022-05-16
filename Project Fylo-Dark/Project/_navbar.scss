@@ -1,0 +1,108 @@
+ @include for_desktop{
+  .main-header{
+    width: 100%;
+    height: auto;
+   
+    
+  }
+  .header_navbar{
+    margin-bottom: 3rem;
+    padding:3rem 4.5rem 0rem 4.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .link_brand{
+    width: 150px;
+  }
+  .navbar_unorder-list{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .unorder-list_order-list{
+    width: auto;
+    height: auto;
+  }
+  .order-list_link-item-navbar{
+    padding: .5rem 0;
+    font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(to right top, #00f7ff, #00f0ff, #00e9ff, #00e1ff, #00daff, #00d8ff, #00d7ff, #00d5ff, #00d8ff, #00dcff, #00dfff, #00e2ff);
+      transform: scale(0);
+      transition-duration: .4s;
+      transform-origin: center;
+      border-radius: 1rem;
+      
+    }
+    &:hover{
+      &:before{
+        transform: scale(1); 
+      }
+    }
+  }
+  .bk-curvy{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+  }
+}
+
+@include for_mobile{
+  .main-header{
+    width: 100%;
+    height: auto;
+  }
+  .header_navbar{
+    margin-bottom: 3rem;
+    padding:1.5rem 1.5rem 0rem 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    
+    
+  }
+
+  .link_brand{
+    width: 115px;
+  }
+  .navbar_unorder-list{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .unorder-list_order-list{
+    width: auto;
+    height: auto;
+  }
+  .order-list_link-item-navbar{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  .bk-curvy{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+}

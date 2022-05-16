@@ -1,0 +1,142 @@
+@include for_desktop {
+  .main-intro{
+    @include margin_sections;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .intro_article{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+  }
+  .intro-artice_only-h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    width: 50%;
+    
+  }
+  .intro-article_parrafo{
+    font-size: 1.2rem;
+    width: 45%;
+    font-weight: 400;
+    letter-spacing: .1px;
+  }
+  .intro_illustration-img{
+    width: 100%;
+    transition: .4s ease-in;
+      &:hover{
+      
+      
+      transform: scale(1.050) translateZ(100px) perspective(600px);
+      filter: drop-shadow(1px 1px 10px  rgba(165, 222, 245, 0.466));
+      
+      }
+  }
+  .intro-article_buttonlink-get{
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+    background-color: #2df3fa;
+    
+    font-weight: 600;
+    transition: .2s ease-in;
+    &:hover{
+     color: #090c24e1;
+     background-color: rgb(235, 251, 255);
+     transform: scale(1.050) perspective(600px);
+     box-shadow: 6px 6px 10px rgba(10, 12, 36, 0.199);
+     filter: drop-shadow(1.5px 1.5px 0 rgb(62, 194, 255)) contrast(103%);
+    }
+  }
+  
+  .main-intro_curvy-bk{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -17rem;
+    z-index: -1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@include for_mobile{
+  
+  
+    .main-intro{
+      @include margin_sections_mobile;  
+      padding: 0rem 1rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      
+    }
+  
+    .intro_article{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.4rem;
+    }
+    .intro-artice_only-h1{
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.7rem;
+      width: 100%;
+      
+    }
+    .intro-article_parrafo{
+      font-size: 1rem;
+      width: 90%;
+      font-weight: 400;
+      letter-spacing: .1px;
+    }
+    .intro_illustration-img{
+      width: 100%;
+      transition: .4s ease-in;
+        &:hover{
+        
+        
+        transform: scale(1.050) translateZ(100px) perspective(600px);
+        filter: drop-shadow(1px 1px 10px  rgba(255, 254, 254, 0.281));
+        
+        }
+    }
+    .intro-article_buttonlink-get{
+      padding: 1rem 5rem;
+      border-radius: 3rem;
+      background-image: linear-gradient(to right top, #00f7ff, #00f0ff, #00e9ff, #00e1ff, #00daff, #00d8ff, #00d7ff, #00d5ff, #00d8ff, #00dcff, #00dfff, #00e2ff);
+      
+      &:hover{
+        
+        background-image: linear-gradient(to right top, #9aeeff, #96ecfb, #91ebf6, #8ee9f2, #8ae7ed, #89e7ed, #88e8ed, #87e8ed, #88ebf1, #89edf6, #8af0fa, #8bf2ff);
+        
+      }
+    }
+
+    
+}
